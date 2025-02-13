@@ -1,27 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'signup_screen.dart';
 
 class HomePage extends StatelessWidget {
-   const HomePage({super.key});
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white, // Latar belakang putih
+      backgroundColor: Colors.white,
       body: Column(
         children: [
-          SizedBox(height: 60), // Memberi ruang di atas
+          const SizedBox(height: 60),
           Image.asset(
-            'assets/logo_skap.png', // Pastikan gambarnya ada di folder assets
-            width: 180, // Ukuran gambar
+            'assets/logo_skap.png',
+            width: 180,
           ),
-          SizedBox(height: 20), // Jarak antara gambar dan card
+          const SizedBox(height: 20),
           Expanded(
             child: Container(
               width: double.infinity,
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: Colors.purple[600], // Warna background card
-                borderRadius: BorderRadius.only(
+                color: Colors.purple[600],
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(30),
                   topRight: Radius.circular(30),
                 ),
@@ -36,8 +38,8 @@ class HomePage extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                       color: Colors.white,
                     ),
-                    ),
-                  SizedBox(height: 37),
+                  ),
+                  const SizedBox(height: 37),
                   Text(
                     'SKAP (Sistem Keamanan Anak dan Perempuan) menjadi solusi '
                     'memberikan rasa aman bagi perempuan dalam berbagai situasi.',
@@ -46,14 +48,16 @@ class HomePage extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       color: Colors.white,
                     ),
-                    ),
-                  SizedBox(height: 40),
+                  ),
+                  const SizedBox(height: 40),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      _buildButton(context, 'SIGN IN', const Color.fromARGB(255, 205, 173, 210)),
-                      SizedBox(width: 5),
-                      _buildButton(context, 'SIGN UP', const Color.fromARGB(255, 205, 173, 210)),
+                      _buildButton(context, 'SIGN IN',
+                          const Color.fromARGB(255, 205, 173, 210)),
+                      const SizedBox(width: 5),
+                      _buildButton(context, 'SIGN UP',
+                          const Color.fromARGB(255, 205, 173, 210)),
                     ],
                   ),
                 ],
@@ -73,7 +77,7 @@ class HomePage extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
-          padding: EdgeInsets.symmetric(vertical: 12),
+          padding: const EdgeInsets.symmetric(vertical: 12),
         ),
         onPressed: () {
           if (text == 'SIGN IN') {
@@ -94,3 +98,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+

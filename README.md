@@ -2,4 +2,4 @@
 Sistem Keamanan Anak & Perempuan
 
 # Coming Soon
-![image](https://github.com/user-attachments/assets/36beb368-875e-4bd7-8253-2f13ff86229c)
+https://www.figma.com/design/Cc5pGVRag5UTETtYEHoVy6/SKAW?node-id=0-1&t=ZiCFmCgWXfnoRXMf-1
